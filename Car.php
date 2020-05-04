@@ -1,7 +1,7 @@
 <?php
 require_once 'Vehicle.php';
 
-class Car extends Vehicle
+class Car extends Vehicle implements lightableInterface
 {
     const ALLOWED_ENERGIES = [
         'fuel',
@@ -79,5 +79,15 @@ class Car extends Vehicle
         } finally {
             echo 'Ma voiture roule comme un Donuts';
         }
+    }
+
+    public function switchOn()
+    {
+        return true;
+    }
+
+    public function switchOff()
+    {
+        return false;
     }
 }

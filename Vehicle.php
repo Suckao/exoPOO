@@ -1,6 +1,5 @@
 <?php
-
-
+include "LightableInterface.php";
 abstract class Vehicle
 {
     /**
@@ -89,6 +88,16 @@ abstract class Vehicle
     public function setNbWheels(int $nbWheels): void
     {
         $this->nbWheels = $nbWheels;
+    }
+
+    public function switchOn()
+    {
+        // TODO: Implement switchOn() method.
+    }
+
+    public function switchOff()
+    {
+        // TODO: Implement switchOff() method.
     }
 
 }
